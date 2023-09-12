@@ -3,6 +3,14 @@
 
 :root {
     --primary: #fe2c55;
+    --secondary: #14151f;
+    --black: #000;
+    --white: #fff;
+    --text-color: #fff;
+
+    //Default Layout
+    --default-layout-height: 68px;
+    --default-layout-width: 1520px;
 }
 
 * {
@@ -20,4 +28,17 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    //background: linear-gradient(180deg, #060716 80%, #06071600);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }

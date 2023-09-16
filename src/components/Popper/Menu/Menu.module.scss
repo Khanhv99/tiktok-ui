@@ -1,0 +1,44 @@
+.menu-list {
+    width: 240px;
+
+    .menu-item {
+        margin-left: 0;
+    }
+}
+.menu-popper {
+    padding-bottom: 8px;
+}
+.menu-item {
+    border-radius: 0;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    width: 100%;
+
+    &.separate {
+        border-top: 1px solid rgb(239 239 239 / 39%);
+    }
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.04);
+    }
+}
+
+.header {
+    position: relative;
+    height: 50px;
+    margin-top: -8px;
+}
+
+.back-btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--white);
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

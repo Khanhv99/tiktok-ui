@@ -96,3 +96,35 @@
         cursor: pointer;
     }
 }
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+.btn-icon {
+    background-color: #14151f;
+}
+.more-btn {
+    font-size: 2rem;
+    margin-left: 20px;
+    background: var(--secondary);
+    color: var(--white);
+    padding: 0 12px;
+    cursor: pointer;
+}
+.action-btn {
+    font-size: 2.6rem;
+    background-color: transparent;
+    color: white;
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 12px;
+}

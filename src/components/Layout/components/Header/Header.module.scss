@@ -18,84 +18,6 @@
 .logo {
     padding-left: 24px;
 }
-.search,
-.search-result {
-    width: 430px;
-}
-.search {
-    position: relative;
-
-    height: 40px;
-    border: 2px solid hsla(0, 0%, 100%, 0.7);
-    border-radius: 12px;
-    display: flex;
-
-    input {
-        flex: 1;
-        color: var(--white);
-        height: 100%;
-        font-size: 1.6rem;
-        border: none;
-        caret-color: var(--primary);
-        background-color: #14151f;
-        padding: 0 12px;
-        line-height: 22px;
-        outline: none;
-        border-bottom-left-radius: 12px !important;
-        border-top-left-radius: 12px !important;
-    }
-
-    input:not(:placeholder-shown) ~ .search-btn {
-        border-bottom-right-radius: 6px !important;
-        border-top-right-radius: 6px !important;
-        background-color: var(--white);
-        color: var(--black);
-    }
-    input:not(:placeholder-shown) ~ .search-btn {
-        border-bottom-right-radius: 6px !important;
-        border-top-right-radius: 6px !important;
-        background-color: var(--white);
-        color: var(--black);
-    }
-
-    &:hover {
-        border: 2px solid white;
-    }
-}
-
-.search-result {
-}
-
-.search-lable {
-    padding: 0 16px;
-}
-.clear,
-.loading {
-    position: absolute;
-    right: 76px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--white);
-}
-
-.search-btn {
-    width: 69px;
-    height: 100%;
-    outline: none;
-    background-color: #14151f;
-    border-bottom-right-radius: 12px !important;
-    border-top-right-radius: 12px !important;
-    font-size: 1.8rem;
-    color: var(--white);
-
-    &:hover {
-        border-bottom-right-radius: 6px !important;
-        border-top-right-radius: 6px !important;
-        background-color: var(--white);
-        color: var(--black);
-        cursor: pointer;
-    }
-}
 
 .actions {
     display: flex;
@@ -113,6 +35,8 @@
     cursor: pointer;
 }
 .action-btn {
+    position: relative;
+    display: flex;
     font-size: 2.6rem;
     background-color: transparent;
     color: white;
@@ -127,4 +51,19 @@
     border-radius: 50%;
     cursor: pointer;
     margin-left: 12px;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0px;
+    padding: 0px 6px;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    font-family: 'ProximaNova', sans-serif;
+    background-color: var(--primary);
 }
